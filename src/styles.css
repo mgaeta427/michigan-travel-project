@@ -18,7 +18,7 @@ body {
 }
 
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -35,9 +35,19 @@ body {
 
 }
 
+.embed {
+  width: 100%; 
+  aspect-ratio: 1 /1; 
+}
+
 .card {
    background: white;
    margin: 30px 0; 
+}
+
+.card-header.grid {
+    grid-gap: 0;
+
 }
 
 .card-body {
@@ -78,7 +88,7 @@ section.secondary {
 
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
     url("../images/bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,7 +189,7 @@ footer {
     color: white;
     background-image: linear-gradient(
     rgba(39, 32, 68, 0.9), 
-    rgba(39, 32, 68,  0.9)
+    rgba(39, 32, 68, 0.9)
     ),
     url("../cities/Michigan.jpg");
     background-repeat: no-repeat;
@@ -240,6 +250,14 @@ footer a {
 
     section {
         padding: 30px;
+    }
+
+    .card-header img{
+        display: none;
+    }
+
+    .embed {
+        aspect-ration: 16 / 9;
     }
 
 }
